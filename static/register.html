@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <h1 class="header">RoboChat</h1>
+    <form class="form" id="register-form">
+        <div class="form-container">
+            <label for="login" class="form-label">Login</label>
+            <input type="text" id="login" name="login" class="form-input" placeholder="Login">
+            
+            <label for="password" class="form-label">Password</label>
+            <div class="pass">
+                <input type="password" id="password" name="password" class="form-input" placeholder="Password">
+                <i class="fa-regular fa-eye fa-2x" id="icon"></i>
+            </div>
+            
+            <label for="passwordRepeat" class="form-label">Repeat password</label>
+            <div class="pass">
+                <input type="password" id="passwordRepeat" name="passwordRepeat" class="form-input"
+                placeholder="Repeat password">
+                <i class="fa-regular fa-eye fa-2x" id="icon1"></i>
+            </div>
+
+            <span id="response"></span>
+            <button type="submit" class="form-button">Register</button>
+            <a href="/login" class="form-link">Have an account?</a>
+        </div>
+    </form>
+
+    <script src="auth.js"></script>
+</body>
+
+</html>
